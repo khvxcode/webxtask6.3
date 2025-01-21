@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>VU22CSEN0100110</title>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById("password");
+            const checkbox = document.getElementById("showPassword");
+            passwordField.type = checkbox.checked ? "text" : "password";
+        }
+    </script>
+</head>
+<body bgcolor="lightgreen">
+    <h2>Password</h2>
+    <form>
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Enter password">
+        <br><br>
+        <label>
+            <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()"> Show Password
+        </label>
+    </form>
+</body>
+</html>
